@@ -6,12 +6,14 @@ class FoooooootyLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Material App Bar'),
-      ),
-      body: const Center(
-        child: Text('Hello World'),
-      ),
-    );
+        body: Container(
+          color: Colors.blue,
+          child: const Text(
+            "HMMMMMMMMMMMMMMMMMMMMMMMM",
+            style: TextStyle(
+              fontSize: 42.0,
+            ),
+          ),
+        ));
   }
 }
