@@ -6,14 +6,17 @@ class FoooooootyLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-          color: Colors.blue,
-          child: const Text(
-            "HMMMMMMMMMMMMMMMMMMMMMMMM",
-            style: TextStyle(
-              fontSize: 42.0,
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text(
+              "Welcome to Foooooooty!",
+              style: Theme.of(context).textTheme.titleLarge,
             ),
-          ),
-        ));
+          ],
+        ),
+      ),
+    );
   }
 }
