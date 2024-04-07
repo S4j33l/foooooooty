@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:football_info_app/theme/foooooooty_application_theme.dart';
 
