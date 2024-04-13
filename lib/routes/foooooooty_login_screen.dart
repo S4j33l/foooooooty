@@ -6,7 +6,7 @@ class FoooooootyLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -18,16 +18,25 @@ class FoooooootyLoginScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               child: TextField(
                 decoration: InputDecoration(
-                  labelText: "Email",
+                  label: Text(
+                    "Email",
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge!
+                        .copyWith(fontSize: 20.0),
+                  ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: const BorderSide(
-                        style: BorderStyle.solid, color: Colors.amber),
+                      style: BorderStyle.solid,
+                      color: Colors.amber,
+                    ),
                   ),
-                  border: OutlineInputBorder(
+                  enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: const BorderSide(
-                        style: BorderStyle.solid, color: Colors.black,),
+                      style: BorderStyle.solid,
+                    ),
                   ),
                 ),
                 keyboardType: TextInputType.emailAddress,
@@ -38,16 +47,25 @@ class FoooooootyLoginScreen extends StatelessWidget {
               child: TextField(
                 style: Theme.of(context).textTheme.titleLarge,
                 decoration: InputDecoration(
-                  labelText: "Password",
+                  label: Text(
+                    "Password",
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge!
+                        .copyWith(fontSize: 20.0),
+                  ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: const BorderSide(
-                        style: BorderStyle.solid, color: Colors.amber),
+                      style: BorderStyle.solid,
+                      color: Colors.amber,
+                    ),
                   ),
-                  border: OutlineInputBorder(
+                  enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: const BorderSide(
-                        style: BorderStyle.solid, color: Colors.black),
+                      style: BorderStyle.solid,
+                    ),
                   ),
                 ),
                 obscureText: true,
