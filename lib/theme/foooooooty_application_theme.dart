@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 ThemeData foooooootyApplicationTheme = ThemeData(
-  primarySwatch: Colors.amber,
+  primarySwatch: Colors.teal,
   textTheme: const TextTheme(
     titleLarge: TextStyle(
       fontSize: 24.0,

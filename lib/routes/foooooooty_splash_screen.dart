@@ -26,7 +26,6 @@ class _FoooooootySplashScreenState extends State<FoooooootySplashScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            color: Colors.orange,
             child: Text(
               "Hello Nigga",
               style: foooooootyApplicationTheme.textTheme.titleLarge,
